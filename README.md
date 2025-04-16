@@ -8,7 +8,11 @@
 人流量检测和捕捉
 
 ## 演示
+<<<<<<< HEAD
 ![image](images/zhouze.png)
+=======
+
+>>>>>>> 703113b1c7d6ad1def42f97944e44c1d110e1ffd
 
 ## 支持环境
 
