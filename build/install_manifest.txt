@@ -1,0 +1,7 @@
+/home/gavinccc/luckyolo/install/luckyolo/luckyolo
+/home/gavinccc/luckyolo/install/luckyolo/model/anchors_yolov5.txt
+/home/gavinccc/luckyolo/install/luckyolo/model/labels_list.txt
+/home/gavinccc/luckyolo/install/luckyolo/model/people.rknn
+/home/gavinccc/luckyolo/install/luckyolo/model/yolov5.rknn
+/home/gavinccc/luckyolo/install/luckyolo/lib/librknnmrt.so
+/home/gavinccc/luckyolo/install/luckyolo/lib/librga.so

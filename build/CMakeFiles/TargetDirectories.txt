@@ -1,0 +1,13 @@
+/home/gavinccc/luckyolo/build/CMakeFiles/luckyolo.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/edit_cache.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/rebuild_cache.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/list_install_components.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/install.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/install/local.dir
+/home/gavinccc/luckyolo/build/CMakeFiles/install/strip.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/edit_cache.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/rebuild_cache.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/list_install_components.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/install.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/install/local.dir
+/home/gavinccc/luckyolo/build/3rdparty.out/CMakeFiles/install/strip.dir

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>记录展示</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .history-entry { margin-bottom: 8px; cursor: pointer; }
+        .history-entry:hover { background: #eef; }
+        img { max-width: 200px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>历史记录</h1>
+    <div id="history"></div>
+
+    <h2>对应图片</h2>
+    <div id="images"></div>
+    <hr>
+
+    <script>
+        async function fetchHistory() {
+            try {
+                console.log("调用 fetchHistory...");
+                let res = await fetch("/history");
+                if (!res.ok) throw new Error("请求失败，状态码: " + res.status);
+
+                let data = await res.json();
+                console.log("历史数据:", data);
+
+                let container = document.getElementById("history");
+                container.innerHTML = '';
+
+                data.forEach((item, idx) => {
+                    let div = document.createElement("div");
+                    div.className = "history-entry";
+                    div.innerHTML = `${idx + 1}. [${item.time}] personId: ${item.personId}, direction: ${item.direction}`;
+                    div.onclick = async () => {
+                        try {
+                            let res = await fetch("/images?personid=" + item.personId);
+                            let imgs = await res.json();
+                            let imgContainer = document.getElementById("images");
+                            imgContainer.innerHTML = '';
+                            imgs.forEach(img => {
+                                let image = document.createElement("img");
+                                image.src = "images/" + img;
+                                imgContainer.appendChild(image);
+                            });
+                        } catch (e) {
+                            console.error("加载图片失败:", e);
+                        }
+                    };
+                    container.appendChild(div);
+                });
+            } catch (e) {
+                console.error("加载历史记录失败:", e);
+            }
+        };
+
+        //图片获取api
+        
+
+        // 等 DOM 加载完成后调用
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchHistory();
+            setInterval(fetchHistory, 10000);
+        });
+    </script>
+</body>
+</html>
