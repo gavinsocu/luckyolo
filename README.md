@@ -8,7 +8,7 @@
 人流量检测和捕捉
 
 ## 演示
-<video src="images/video.mp4" alt="luck_yolov5" width="300">
+![image](images/zhouze.png)
 
 ## 支持环境
 
@@ -60,9 +60,12 @@
     ./luckyolo
     ```
     ** 注意：** 请勿更改部署文件夹的结构。
-+ 使用SLC打开网络流`rtSP：//<your_ip>/live/0 `（根据需要调整IP地址以检索图像）
++ 使用VLC打开网络流`rtsp：//<your_ip>/live/0 `（根据需要调整IP地址以检索图像）
+![image](images/zhouze.png)
 
-识别到新的personId会把图写入images，当一个personid消失会把它写入history.txt
+
+
+### 识别到新的personId会把图写入images，当一个personid消失会把它写入history.txt
 
 ![image](images/images.png)
 ![image](images/history.png)
@@ -85,6 +88,8 @@
     python web.py
     ```
     浏览器访问`http://<your_ip>:8080`即可
+
+界面不好看，这里不展示了
 
 
 ## Detail
