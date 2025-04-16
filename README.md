@@ -8,7 +8,7 @@
 人流量检测和捕捉
 
 ## 演示
-<video src="images/video.mp4" alt="luck_yolov5" width="300">
+
 
 ## 支持环境
 
